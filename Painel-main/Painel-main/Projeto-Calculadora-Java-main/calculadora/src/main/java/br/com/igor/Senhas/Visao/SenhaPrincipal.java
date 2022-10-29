@@ -5,11 +5,26 @@ import javax.swing.JFrame;
 import br.com.igor.Senhas.Modelo.Memoria;
 
 public class SenhaPrincipal extends JFrame {
+    public static JFrame painelSenha;
     public static JFrame painelPrincipal;
     public static void main(String[] args) {
         
-       TelaDeLogin t1 = new TelaDeLogin();
-       t1.criarTelaLogin();
+    TelaLogin telaLogin = new TelaLogin();
+
+    SenhaPrincipal.painelSenha = telaLogin.criarTela();
+
+        
+        
+
+       
+    
+        
+
+
+       
+
+       
+        
        
 
 
@@ -21,10 +36,17 @@ public class SenhaPrincipal extends JFrame {
     
 }
 
+
+
 public static void criart(){
     Memoria.getInstancia().zerar();
-    painelPrincipal = NovoPainel.CriarPainel();
+    painelSenha = NovoPainel.CriarPainel();
 }
+
+
+
+
+
 }
 
 

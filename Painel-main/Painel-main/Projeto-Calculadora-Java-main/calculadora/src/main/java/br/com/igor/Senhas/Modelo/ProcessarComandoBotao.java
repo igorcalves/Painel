@@ -18,7 +18,7 @@ public class ProcessarComandoBotao {
 
     public static String Log_deslog(String valor){
         if(ProcessarSenha.instancia.Processar(valor)){
-            SenhaPrincipal.painelPrincipal.dispose();
+            SenhaPrincipal.painelSenha.dispose();
             JOptionPane.showMessageDialog(null,"Senha correta Parabéns");
             MostrarTexto.Mostrar();
             valor = "";
@@ -46,7 +46,7 @@ public class ProcessarComandoBotao {
     }
 
     public static JFrame cadastrarSenha(){
-        SenhaPrincipal.painelPrincipal.dispose();
+        SenhaPrincipal.painelSenha.dispose();
         JOptionPane.showMessageDialog(null,"Vamos Cadastrar sua nova Senha");
         painelPrincipalSenha = CriarPainel();
         tecladoSenha tecladoSenha = new tecladoSenha();

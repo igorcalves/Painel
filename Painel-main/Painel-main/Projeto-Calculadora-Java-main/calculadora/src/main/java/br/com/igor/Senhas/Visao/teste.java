@@ -2,7 +2,7 @@ package br.com.igor.Senhas.Visao;
 
 import br.com.igor.Senhas.Modelo.ProcessarSenha;
 
-public class teste {
+public class teste  {
 
     public static void main(String[] args) {
         ProcessarSenha p1 = new ProcessarSenha();
